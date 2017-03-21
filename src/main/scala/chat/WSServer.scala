@@ -1,3 +1,5 @@
+package chat
+
 import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.model.ws.{Message, TextMessage}
@@ -26,6 +28,11 @@ object WSServer extends App {
   path("ws-echo") {
     get {
       handleWebSocketMessages(echoService)
+    }
+  } ~
+  pathPrefix("ws-chat" / IntNumber) { chatId =>
+    parameter('name) { userName =>
+      handleWebSocketMessages(ChatRooms.findOrCreate(chatId).websocketFlow(userName))
     }
   }
 
