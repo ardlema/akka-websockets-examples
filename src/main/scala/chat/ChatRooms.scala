@@ -10,7 +10,7 @@ object ChatRooms {
 
   private def createNewChatRoom(number: Int)(implicit actorSystem: ActorSystem): ChatRoom = {
     val chatRoom = ChatRoom(number)
-    chatRooms += (number -> chatRoom)
+    chatRooms += (number → chatRoom)
     chatRoom
   }
 }

@@ -1,6 +1,5 @@
 package chat
 
-
 import akka.actor.ActorRef
 
 case class ChatMessage(sender: String, text: String)
