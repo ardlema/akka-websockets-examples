@@ -1,4 +1,4 @@
-package chat
+package org.ardlema.chat
 
 package io.scalac.akka.http.websockets
 

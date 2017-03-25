@@ -1,3 +1,5 @@
+import org.ardlema.chat.{ ChatMessage, IncomingMessage }
+
 import scala.language.implicitConversions
 
 package object chat {

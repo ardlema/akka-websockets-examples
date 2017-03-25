@@ -1,4 +1,4 @@
-package chat
+package org.ardlema.chat
 
 import akka.actor.ActorSystem
 

@@ -1,4 +1,4 @@
-package chat
+package org.ardlema.chat
 
 import akka.NotUsed
 import akka.actor.{ ActorSystem, Props }

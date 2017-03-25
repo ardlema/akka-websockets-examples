@@ -1,4 +1,4 @@
-package chat
+package org.ardlema.chat
 
 import akka.actor.{ Actor, ActorRef }
 import akka.http.scaladsl.model.ws.TextMessage

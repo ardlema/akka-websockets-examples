@@ -15,23 +15,12 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-
-  //"com.chuusai" %% "shapeless" % "2.3.2",
-  //"org.typelevel" %% "cats" % "0.8.0",
-
-  //"com.typesafe.akka" %% "akka-slf4j" % "2.4.12",
-    //"com.typesafe.akka" %% "akka-stream-testkit" % "2.4.12",
-    //"com.typesafe.akka" %% "akka-testkit" % "2.4.12" % "test",
-
-    //"com.typesafe.akka" %% "akka-http-experimental" % "2.4.11",
-    //"com.typesafe.akka" %% "akka-http-spray-json-experimental" % "2.4.11",
-    //"com.typesafe.akka" %% "akka-http-testkit" % "2.4.11",
-
   "com.typesafe.akka" %% "akka-http-core" % "10.0.5",
   "com.typesafe.akka" %% "akka-http-experimental" % "2.4.11.1",
   "com.typesafe.akka" %% "akka-actor" % "2.4.17",
   "com.typesafe.akka" %% "akka-stream" % "2.4.17",
   "org.java-websocket" % "Java-WebSocket" % "1.3.0",
+  "com.typesafe.play" %% "play-json" % "2.3.4",
   "org.scalatest" %% "scalatest" % "3.0.0" % "test",
   "org.scalacheck" %% "scalacheck" % "1.13.4" % "test"
 )
