@@ -13,7 +13,6 @@ import org.ardlema.publisher.{ RouterActor, VMActor, VMStatsPublisher }
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 import scala.io.StdIn
-import scala.util.Random
 
 object WSServer extends App {
 
@@ -75,7 +74,6 @@ object WSServer extends App {
   // vmactor: will start sending messages to the router, which will pass them on to any
   // connected routee
 
-
   /**
    * Creates a flow which uses the provided source as additional input. This complete scenario
    * works like this:
@@ -89,9 +87,5 @@ object WSServer extends App {
       .map[Message](x ⇒ TextMessage.Strict(x))
 
     Flow.fromSinkAndSource(Sink.ignore, source)
-  }
-
-  def randomPrintableString(length: Int, start: String = ""): String = {
-    if (length == 0) start else randomPrintableString(length - 1, start + Random.nextPrintableChar())
   }
 }
